@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Intent And Permissions</string>
+    <string name="titleContent">Choose what permissions to allow the app to access</string>
+    <string name="storageTitle">Storage</string>
+    <string name="locationTitle">Location</string>
+    <string name="cameraTitle">Camera</string>
+    <string name="phoneTitle">Phone</string>
+    <string name="contactsTitle">Contacts</string>
+    <string name="storageContent">access photos, media and files on your device</string>
+    <string name="locationContent">access this device\'s location</string>
+    <string name="cameraContent">take pictures and record videos</string>
+    <string name="phoneContent">make and manage phone calls</string>
+    <string name="contactsContent">access your contacts</string>
+    <string name="permissionGrantedContent">Permission already granted!</string>
+    <string name="permissionNotGrantedContent">Please request for the permission</string>
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/titleContent"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/storageTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/storageTitle"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/titleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+    <TextView
+        android:id="@+id/locationTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/locationTitle"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/storageContentTextView"
+        app:layout_constraintTop_toBottomOf="@+id/storageContentTextView" />
+
+    <TextView
+        android:id="@+id/cameraTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/cameraTitle"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/locationContentTextView"
+        app:layout_constraintTop_toBottomOf="@+id/locationContentTextView" />
+
+    <TextView
+        android:id="@+id/phoneTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/phoneTitle"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/cameraContentTextView"
+        app:layout_constraintTop_toBottomOf="@+id/cameraContentTextView" />
+
+    <TextView
+        android:id="@+id/contactsTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/contactsTitle"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/phoneContentTextView"
+        app:layout_constraintTop_toBottomOf="@+id/phoneContentTextView" />
+
+    <TextView
+        android:id="@+id/storageContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/storageContent"
+        app:layout_constraintStart_toStartOf="@+id/storageTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/storageTitleTextView" />
+
+    <TextView
+        android:id="@+id/locationContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/locationContent"
+        app:layout_constraintStart_toStartOf="@+id/locationTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/locationTitleTextView" />
+
+    <TextView
+        android:id="@+id/cameraContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/cameraContent"
+        app:layout_constraintStart_toStartOf="@+id/cameraTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/cameraTitleTextView" />
+
+    <TextView
+        android:id="@+id/phoneContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/phoneContent"
+        app:layout_constraintStart_toStartOf="@+id/phoneTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/phoneTitleTextView" />
+
+    <TextView
+        android:id="@+id/contactsContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/contactsContent"
+        app:layout_constraintStart_toStartOf="@+id/contactsTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/contactsTitleTextView" />
+
+    <Switch
+        android:id="@+id/storageSwitch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="requestForPermission"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+    <Switch
+        android:id="@+id/locationSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="requestForPermission"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/storageSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/storageSwitch" />
+
+    <Switch
+        android:id="@+id/cameraSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="requestForPermission"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationSwitch" />
+
+    <Switch
+        android:id="@+id/phoneSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="requestForPermission"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cameraSwitch" />
+
+    <Switch
+        android:id="@+id/contactsSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="requestForPermission"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneSwitch" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/continueFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:onClick="goToSendIntentActivity"
+        android:rotationY="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/closeFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:onClick="exitApp"
+        app:backgroundTint="#F44336"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+</androidx.constraintlayout.widget.ConstraintLayout>
